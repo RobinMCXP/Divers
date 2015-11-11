@@ -1,0 +1,117 @@
+# À mettre dans ~/.gitconfig ou ~/.config/git/config
+
+[user]	
+
+	name = 
+
+	email = 
+
+[color]
+
+	ui = auto
+
+[alias]
+
+	st = status
+
+	ci = commit
+
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+
+	oops = commit --amend --no-edit
+	
+	co = checkout
+
+[core]
+
+	pager = cat
+
+	#
+
+	# Out of luck: on Windows w/o msysGit? You may have Notepad++…
+
+	# editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+
+	# 
+
+	# If you want to use Sublime Text 2's subl wrapper:
+
+	# editor = subl -w
+
+	# 
+    editor = vim
+	whitespace = -trailing-space
+
+[diff]
+
+	mnemonicPrefix = true
+
+	renames = true
+
+	wordRegex = .
+
+	submodule = log
+
+[fetch]
+
+	recurseSubmodules = on-demand
+
+[grep]
+
+	extendedRegexp = true
+
+[log]
+
+	abbrevCommit = true
+
+[merge]
+
+	conflictStyle = diff3
+
+[mergetool]
+
+	keepBackup = false
+
+	keepTemporaries = false
+
+	prompt = false
+
+[pull]
+
+	# This is GREAT… when you know what you're doing and are careful
+
+	# not to pull --no-rebase over a local line containing a true merge.
+
+	# rebase = true
+
+	# WARNING! This option, which does away with the one gotcha of
+
+	# auto-rebasing on pulls, is only available from 1.8.5 onwards.
+
+	rebase = preserve
+
+[push]
+
+	default = upstream
+
+[rerere]
+
+	# If, like me, you like rerere, decomment these
+
+	# autoupdate = true
+
+	# enabled = true
+
+[status]
+
+	submoduleSummary = true
+
+	showUntrackedFiles = all
+
+[color "branch"]
+
+	upstream = cyan
+
+[tag]
+
+	sort = version:refname
