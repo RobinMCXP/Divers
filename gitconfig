@@ -21,6 +21,32 @@
 	oops = commit --amend --no-edit
 	
 	co = checkout
+	
+	fi = flow init
+	
+	ffs = flow feature start
+	
+	ffp = flow feature publish
+	
+	fff = flow feature finish
+	
+	ffr = flow feature rebase
+	
+	ffpl = flow feature pull
+	
+	frs = flow release start
+	
+	frp = flow release publish
+	
+	frf = flow release finish
+	
+	frr = flow release rebase
+	
+	frpl = flow release pull
+	
+	fhs = flow hotfixe start
+	
+	fhf = flow hotfixe finish
 
 [core]
 
