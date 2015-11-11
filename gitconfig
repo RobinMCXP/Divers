@@ -65,7 +65,7 @@
 	# editor = subl -w
 
 	# 
-    editor = vim
+	editor = vim
 	whitespace = -trailing-space
 
 [diff]
