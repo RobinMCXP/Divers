@@ -44,9 +44,9 @@
 	
 	frpl = flow release pull
 	
-	fhs = flow hotfixe start
+	fhs = flow hotfix start
 	
-	fhf = flow hotfixe finish
+	fhf = flow hotfix finish
 
 [core]
 
